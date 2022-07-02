@@ -1,12 +1,23 @@
+.wrap-burger {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
 .burger {
    position: relative;
    width: 30px;
    height: 27px;
    cursor:pointer;
+
  }
- .burger:hover{
-   background-color:blue;
- }
+ /* .burger:hover{
+   background-color:#00372e;
+ } */
  .svg-burger {
    position: absolute;
    top: 0;

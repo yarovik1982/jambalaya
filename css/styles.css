@@ -24,9 +24,17 @@ h1,h2,h3,h4,h5,h6{
    line-height: 100%;
 }
 .header{
-   padding: var(--p-1) 0;
+   padding: var(--p-2) 0;
    border-bottom: 2px solid var(--color-ccc);
 }
-.nav__title{
+.nav{
+   position: relative;
+}
+.title{
    font-size: var(--fz-3);
+}
+.container{
+   max-width: 1470px;
+   padding: 0 var(--p-2);
+   margin: 0 auto;
 }
