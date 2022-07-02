@@ -1,0 +1,46 @@
+.burger {
+   position: relative;
+   width: 30px;
+   height: 27px;
+   cursor:pointer;
+ }
+ .burger:hover{
+   background-color:blue;
+ }
+ .svg-burger {
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ .svg-burger.toggle{
+   opacity: 1;
+   transition: all aese 0.3s;
+   -webkit-transition: all aese 0.3s;
+   -moz-transition: all aese 0.3s;
+   -ms-transition: all aese 0.3s;
+   -o-transition: all aese 0.3s;
+ }
+ .svg-burger{
+   opacity: 0;
+   transition: all aese 0.3s;
+   -webkit-transition: all aese 0.3s;
+   -moz-transition: all aese 0.3s;
+   -ms-transition: all aese 0.3s;
+   -o-transition: all aese 0.3s;
+ }
+ .svg-cross.toggle{
+   opacity: 0;
+   transition: all aese 0.3s;
+   -webkit-transition: all aese 0.3s;
+   -moz-transition: all aese 0.3s;
+   -ms-transition: all aese 0.3s;
+   -o-transition: all aese 0.3s;
+ }
+ .svg-cross{
+   opacity: 1;
+   transition: all aese 0.3s;
+   -webkit-transition: all aese 0.3s;
+   -moz-transition: all aese 0.3s;
+   -ms-transition: all aese 0.3s;
+   -o-transition: all aese 0.3s;
+ }
