@@ -6,10 +6,10 @@
 :root{
    --color-teal:#004d40;
    --color-ccc:#ccc;
-   --fz-1:1rem; --p-1:1rem;
-   --fz-2:2rem; --p-2:2rem;
-   --fz-3:3rem; --p-3:3rem;
-   --fz-4:4rem; --p-4:4rem;
+   --fz-1:1.6rem; --p-1:1rem;
+   --fz-2:3.2rem; --p-2:2rem;
+   --fz-3:4.8rem; --p-3:3rem;
+   --fz-4:6.4rem; --p-4:4rem;
 }
 html,body{
    width: 100%;
@@ -34,7 +34,62 @@ h1,h2,h3,h4,h5,h6{
    font-size: var(--fz-3);
 }
 .container{
-   max-width: 1470px;
+   max-width: 235.2rem;
    padding: 0 var(--p-2);
    margin: 0 auto;
+}
+.screen__item{
+   width:70%; 
+   height:50vh;
+   background:rgba(0,0,0,.7);
+   border-radius:20px;
+   margin: 2rem auto;
+   position: relative;
+}
+.screen__btn{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   border: .5rem solid #ccc;
+   background-color: transparent;
+   top: 50% ;
+   left: 50%;
+   transform:translate(-50%,-50%) ;
+   -webkit-transform:translate(-50%,-50%) ;
+   -moz-transform:translate(-50%,-50%) ;
+   -ms-transform:translate(-50%,-50%) ;
+   -o-transform:translate(-50%,-50%) ;
+   opacity: 0;
+   transition: opacity ease .3s;
+   -webkit-transition: opacity ease .3s;
+   -moz-transition: opacity ease .3s;
+   -ms-transition: opacity ease .3s;
+   -o-transition: opacity ease .3s;
+   cursor: pointer;
+}
+.screen__item:hover .screen__btn{
+   opacity: 1;
+}
+span{
+   margin-left: 2px;
+   width: 0;
+   height: 0;
+   border-top: 1rem solid transparent;
+   border-left: 1.6rem solid #ccc;
+   border-bottom:1rem solid transparent;
+}
+.sourse{
+   font-family: Arial, Helvetica, sans-serif;
+   color:gold;
+   opacity: 0;
+}
+.dist{
+   font-size: var(--fz-1);
+   color: gold;
+   opacity: 1;
+   padding: 3rem;
 }

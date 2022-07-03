@@ -1,4 +1,4 @@
-// import Burger from './modules/Burger.js'
+import PrintText from "./modules/PrintText.js"
 
 document.addEventListener("click", function(event){
    const el = event.target;
@@ -7,4 +7,14 @@ document.addEventListener("click", function(event){
          item.classList.toggle("toggle");
       })
    }
+   if(el.id === "start-print" || el.id === "span-start"){
+      console.log(el);
+      PrintText()
+   }
 }, true)
+
+
+// document.addEventListener("DOMContentLoaded", ()=>{
+//    const rBtn = document.querySelector('.r-btn')
+//    console.log(rBtn);
+// })

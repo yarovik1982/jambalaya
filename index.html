@@ -7,9 +7,8 @@
    <link rel="stylesheet" href="./css/styles.css">
    <link rel="stylesheet" href="./css/grid.css">
    <link rel="stylesheet" href="./css/Burger.css">
-   <link rel="stylesheet" href="./css/react.css">
+
    <script src="./js/index.js" type="module" defer></script>
-   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
    <title>Jambalaya</title>
 </head>
 <body>
@@ -33,7 +32,7 @@
                   </svg>
                </div>
             </div>
-            <h1 class="nav__title title">React tutorial</h1>
+            <h1 class="nav__title title">Title</h1>
          </nav>
       </div>
    </header>
@@ -41,7 +40,32 @@
    <main class="main">
       <div class="container">
          <div class="main__content" id="root">
-            <!-- <script src="./js/MyApp.jsx" type="text/babel"></script> -->
+            <h1 class="main__title title">Урок 1. Создание компонента.</h1>
+            <div class='screen__item'>
+               <button class="screen__btn" id="start-print">
+                  <span id="span-start"></span>
+               </button>
+               <pre class="sourse">
+function MyApp() {
+   return (
+      &lsaquo;div&rsaquo;
+      &lsaquo;h1&rsaquo; 
+         Урок 1. Создание компонента.
+      &lsaquo;/h1&rsaquo;
+      &lsaquo;div&rsaquo;&lsaquo;/div&rsaquo;
+      &lsaquo;/div&rsaquo;
+   );
+ }
+
+ const container = document.getElementById('root');
+ const root = ReactDOM.createRoot(container);
+ root.render(&lsaquo;MyApp /&rsaquo;);
+               </pre>
+            <!-- </code> -->
+            
+            <pre class="dist"></pre>
+            </div>
+            
          </div>
          
       </div>
@@ -49,9 +73,6 @@
 
 
 
-   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <!-- <script src="./js/first_component.js"></script> -->
-  <script src="./js/MyApp.jsx" type="text/babel"></script>
+   
 </body>
 </html>
