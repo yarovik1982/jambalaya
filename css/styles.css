@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .screen__item{
    width:70%; 
-   min-height:50vh;
+   min-height:70vh;
    background:rgba(0,0,0,.7);
    border-radius:20px;
    margin: 2rem auto;
