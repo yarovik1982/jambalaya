@@ -47,11 +47,11 @@
    }
 }
 
-@media (max-width: 48em) {
+/* @media (max-width: 48em) {
    html {
        font-size: 10px;
    }
-}
+} */
 
 @media (max-width: 44em) {
    html {

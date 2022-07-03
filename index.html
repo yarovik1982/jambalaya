@@ -5,8 +5,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/styles.css">
-   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/media-grid-fonts.css">
    <link rel="stylesheet" href="./css/Burger.css">
+   <link rel="stylesheet" href="./css/media.css">
 
    <script src="./js/index.js" type="module" defer></script>
    <title>Jambalaya</title>
@@ -40,26 +41,36 @@
    <main class="main">
       <div class="container">
          <div class="main__content" id="root">
-            <h1 class="main__title title">Урок 1. Создание компонента.</h1>
+            <h1 class="main__title title">Лайфхак - адаптивный шрифт.</h1>
             <div class='screen__item'>
                <button class="screen__btn" id="start-print">
                   <span id="span-start"></span>
                </button>
                <pre class="sourse">
-function MyApp() {
-   return (
-      &lsaquo;div&rsaquo;
-      &lsaquo;h1&rsaquo; 
-         Урок 1. Создание компонента.
-      &lsaquo;/h1&rsaquo;
-      &lsaquo;div&rsaquo;&lsaquo;/div&rsaquo;
-      &lsaquo;/div&rsaquo;
-   );
- }
-
- const container = document.getElementById('root');
- const root = ReactDOM.createRoot(container);
- root.render(&lsaquo;MyApp /&rsaquo;);
+               Привет друзья!
+      Делюсь лайфхаком как сделать шрифт адаптивным.
+      Довольно давно знаю и иногда использую этот
+      подход, - особенно когда заказчик не требует
+      pixel-perfect.
+      Дело в том, что большинство браузеров
+      по-умолчанию используют размер шрифта 16px
+       и если мы пропишем в css-файле для html и body 
+       следующие стили
+hnml,
+body{
+   font-size:62.5%;
+}
+      мы укажем использовать шрифт размером 10px
+      Но как же сделать, чтобы шрифт адаптировался
+      под разные ширины экрана!?
+      Использовать для указания размера шрифта
+      относительные единицы такие как rem  и немного
+      магии в виде дополнительного файла с медиа-запросами
+      специально для шрифтов, который можно получить 
+      перейдя по ссылке под видео. Файл называется 
+      media-grid-fonts.css и находится в папке css
+      Буду признателен благодарности в виде звездочек
+      на гитхаб.
                </pre>
             <!-- </code> -->
             

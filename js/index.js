@@ -8,13 +8,7 @@ document.addEventListener("click", function(event){
       })
    }
    if(el.id === "start-print" || el.id === "span-start"){
-      console.log(el);
+      
       PrintText()
    }
 }, true)
-
-
-// document.addEventListener("DOMContentLoaded", ()=>{
-//    const rBtn = document.querySelector('.r-btn')
-//    console.log(rBtn);
-// })
