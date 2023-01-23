@@ -11,6 +11,12 @@
    --fz-3:4.8rem; --p-3:3rem;
    --fz-4:6.4rem; --p-4:4rem;
 }
+ul,li{
+   list-style: none;
+}
+.none{
+   display: none;
+}
 html,body{
    width: 100%;
    min-height: 100vh;
@@ -23,6 +29,50 @@ h1,h2,h3,h4,h5,h6{
    text-align: center;
    line-height: 100%;
 }
+.menu {
+   position: absolute;
+   background-color: blueviolet;
+   width: 40%;
+   min-width: 300px;
+   z-index: 10;
+   top: -20px;
+   left: -120%;
+   transition:all linear .3s ;
+   -webkit-transition:all linear .3s ;
+   -moz-transition:all linear .3s ;
+   -ms-transition:all linear .3s ;
+   -o-transition:all linear .3s ;
+   box-shadow: 0px 1px 19px 0px #ccc;
+   border-radius: 0 0  20px 0;
+   -webkit-border-radius: 0 0  20px 0;
+   -moz-border-radius: 0 0  20px 0;
+   -ms-border-radius: 0 0  20px 0;
+   -o-border-radius: 0 0  20px 0;
+}
+.menu.active{
+   left: -20px;
+}
+
+.menu__list {
+   padding-top: 80px;
+   padding-left: 20px;
+   padding-bottom: 80px;
+}
+.menu__item {
+   color: gold;
+   font-size: 4em;
+   transition: all linear .3s;
+   -webkit-transition: all linear .3s;
+   -moz-transition: all linear .3s;
+   -ms-transition: all linear .3s;
+   -o-transition: all linear .3s;
+}
+.menu__item:hover{
+   color: rgb(255,255,255);
+}
+.menu__item:not(:last-child){
+   margin-bottom: 20px;
+}
 .header{
    padding: var(--p-2) 0;
    border-bottom: 2px solid var(--color-ccc);
@@ -30,9 +80,17 @@ h1,h2,h3,h4,h5,h6{
 .nav{
    position: relative;
 }
+.burger{
+   position: absolute;
+   z-index: 20;
+}
 .title{
-   font-size: var(--fz-3);
+   /* font-size: var(--fz-3); */
+   font-size: 4.8em;
    letter-spacing: .15rem;
+}
+.main__title{
+   padding: var(--p-2);
 }
 .container{
    max-width: 235.2rem;
