@@ -147,8 +147,12 @@ span{
    opacity: 0;
 }
 .dist{
-   font-size: var(--fz-1);
+   font-size: var(--fz-2);
    color: gold;
    opacity: 1;
    padding: 3rem;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
 }
