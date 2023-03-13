@@ -148,7 +148,7 @@ span{
    opacity: 0;
 }
 .dist{
-   font-size: var(--fz-2);
+   font-size: var(--fz-1);
    color: gold;
    opacity: 1;
    padding: 3rem;
@@ -168,6 +168,7 @@ span{
    -moz-transition: opacity 1s linear;
    -ms-transition: opacity 1s linear;
    -o-transition: opacity 1s linear;
+   padding:var(--p2);
 }
 .link.show{
    opacity: 1;
