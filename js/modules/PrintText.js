@@ -18,7 +18,6 @@ const PrintText = () => {
             if (line == text.length) {
               clearTimeout(interval);
                document.querySelector('pre').innerHTML = result;
-               // document.querySelector('code').innerHTML = result;
               return true;
             }
           }
