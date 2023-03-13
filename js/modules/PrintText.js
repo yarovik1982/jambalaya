@@ -1,12 +1,16 @@
+import { ShowButton, HideButton } from "./ShowOrHiddenButton.js"
+import { ShowLink } from "./ShowLink.js"
 const PrintText = () => {
    const textPre = document.querySelector('.sourse')
    const text = textPre.textContent.split(';').map(item => item = item + `\n`)
     textPre.style.display = 'none'
     
-     let line = 0;
-      let count = 0;
-      let result = '';
-      function typeLine() {
+    
+    let line = 0;
+    let count = 0;
+    let result = '';
+    function typeLine() {
+        HideButton()
         let interval = setTimeout(
           () => {
             result += text[line][count]
@@ -18,6 +22,8 @@ const PrintText = () => {
             if (line == text.length) {
               clearTimeout(interval);
                document.querySelector('pre').innerHTML = result;
+               ShowButton()
+               ShowLink()
               return true;
             }
           }

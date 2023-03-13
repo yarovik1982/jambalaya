@@ -129,6 +129,7 @@ h1,h2,h3,h4,h5,h6{
    -ms-transition: opacity ease .3s;
    -o-transition: opacity ease .3s;
    cursor: pointer;
+   z-index: 10;
 }
 .screen__item:hover .screen__btn{
    opacity: 1;
@@ -151,8 +152,23 @@ span{
    color: gold;
    opacity: 1;
    padding: 3rem;
-   position:absolute;
-   top:50%;
+   
+   /* top:50%;
    left:50%;
-   transform:translate(-50%,-50%);
+   transform:translate(-50%,-50%); */
+}
+.link{
+   display: block;
+   text-align: center;
+   font-size: var(--fz-2);
+   color: #ccc;
+   opacity: 0;
+   transition: opacity 1s linear;
+   -webkit-transition: opacity 1s linear;
+   -moz-transition: opacity 1s linear;
+   -ms-transition: opacity 1s linear;
+   -o-transition: opacity 1s linear;
+}
+.link.show{
+   opacity: 1;
 }
